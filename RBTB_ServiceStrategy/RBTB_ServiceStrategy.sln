@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBTB_ServiceStrategy", "RBTB_ServiceStrategy.csproj", "{78CAF64B-7CFC-4487-8267-7045D9BE9E9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBTB_ServiceStrategy.API", "..\RBTB_ServiceStrategy.API\RBTB_ServiceStrategy.API.csproj", "{9F0128E7-A4AA-4034-B10A-7091254F248C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBTB_ServiceStrategy.Application", "..\RBTB_ServiceStrategy.Application\RBTB_ServiceStrategy.Application.csproj", "{FEBF8944-EB60-4571-B6D2-C27C4192AFBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBTB_ServiceStrategy.Database", "..\RBTB_ServiceStrategy.Database\RBTB_ServiceStrategy.Database.csproj", "{D80475F7-D912-409B-B1A3-3F9BEEB613C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78CAF64B-7CFC-4487-8267-7045D9BE9E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78CAF64B-7CFC-4487-8267-7045D9BE9E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78CAF64B-7CFC-4487-8267-7045D9BE9E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78CAF64B-7CFC-4487-8267-7045D9BE9E9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F0128E7-A4AA-4034-B10A-7091254F248C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F0128E7-A4AA-4034-B10A-7091254F248C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F0128E7-A4AA-4034-B10A-7091254F248C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F0128E7-A4AA-4034-B10A-7091254F248C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEBF8944-EB60-4571-B6D2-C27C4192AFBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEBF8944-EB60-4571-B6D2-C27C4192AFBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEBF8944-EB60-4571-B6D2-C27C4192AFBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEBF8944-EB60-4571-B6D2-C27C4192AFBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D80475F7-D912-409B-B1A3-3F9BEEB613C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D80475F7-D912-409B-B1A3-3F9BEEB613C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D80475F7-D912-409B-B1A3-3F9BEEB613C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D80475F7-D912-409B-B1A3-3F9BEEB613C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4168C33E-B8BD-413E-B65D-3EC04C48D4C2}
+	EndGlobalSection
+EndGlobal
