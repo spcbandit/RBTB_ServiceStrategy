@@ -10,7 +10,7 @@ namespace RBTB_ServiceStrategy.Application.Entities
     public class StrategyEntity
     {
         [Key]
-        public Guid Id { get; set; }
+        public Guid Id { get; set; } = Guid.NewGuid();
 
         public string Name { get; set; }
 

@@ -15,6 +15,6 @@ namespace RBTB_ServiceStrategy.Application.Requests.Create
 
         public string Value { get; set; }
 
-        public int IdStrategy { get; set; }
+        public Guid IdStrategy { get; set; }
     }
 }

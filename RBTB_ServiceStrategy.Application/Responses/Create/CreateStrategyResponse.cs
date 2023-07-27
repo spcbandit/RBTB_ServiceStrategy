@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace RBTB_ServiceStrategy.Application.Responses.Create
 {
-    internal class CreateStrategyResponse : BaseResponse
+    public class CreateStrategyResponse : BaseResponse
     {
-        public int IdStrategy { get; set; }
+        public Guid IdStrategy { get; set; }
     }
 }

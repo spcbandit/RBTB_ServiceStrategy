@@ -18,5 +18,6 @@ namespace RBTB_ServiceStrategy.Database.Context
         {
             Database.EnsureCreated();
         }
+
     }
 }

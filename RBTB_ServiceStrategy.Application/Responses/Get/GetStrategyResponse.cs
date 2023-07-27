@@ -1,14 +1,12 @@
-﻿using MediatR;
-using RBTB_ServiceStrategy.Application.Responses.Create;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RBTB_ServiceStrategy.Application.Requests.Create
+namespace RBTB_ServiceStrategy.Application.Responses.Get
 {
-    public class CreateStrategyRequest : IRequest<CreateStrategyResponse>
+    public class GetStrategyResponse : BaseResponse
     {
         public string Name { get; set; }
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RBTB_ServiceStrategy.Application.Responses
 {
-    internal class BaseResponse
+    public class BaseResponse
     {
         public bool IsSuccess { get; set; }
 

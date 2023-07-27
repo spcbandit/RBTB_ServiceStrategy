@@ -1,7 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using RBTB_ServiceStrategy.Application.Abstractions;
+using RBTB_ServiceStrategy.Application.Entities;
 using RBTB_ServiceStrategy.Database.Context;
+using RBTB_ServiceStrategy.Database.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +20,8 @@ namespace RBTB_ServiceStrategy.Database
         {
             string connectionString = configuration.GetConnectionString("RBTB_ConnectionString");
             services.AddDbContext<RBTB_ServiceStrategyContext>(options => options.UseNpgsql(connectionString));
+            services.AddTransient<IRepository<SettingsEntity>, SettingsRepository>();
+            services.AddTransient<IRepository<StrategyEntity>, StrategyRepository>();
         }
     }
 }

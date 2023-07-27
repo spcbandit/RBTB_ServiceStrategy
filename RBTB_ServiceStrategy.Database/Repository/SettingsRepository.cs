@@ -11,12 +11,12 @@ using System.Threading.Tasks;
 
 namespace RBTB_ServiceStrategy.Database.Repository
 {
-    public class SettingsRespository : IRepository<SettingsEntity>
+    public class SettingsRepository : IRepository<SettingsEntity>
     {
         private readonly DbSet<SettingsEntity> _db;
         private readonly RBTB_ServiceStrategyContext _context;
 
-        public SettingsRespository(RBTB_ServiceStrategyContext context)
+        public SettingsRepository(RBTB_ServiceStrategyContext context)
         {
             _context = context;
             _db = context.Set<SettingsEntity>();

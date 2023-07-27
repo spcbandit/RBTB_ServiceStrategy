@@ -11,14 +11,14 @@ namespace RBTB_ServiceStrategy.Application.Entities
     public class SettingsEntity
     {
         [Key]
-        public Guid Id { get; set; }
+        public Guid Id { get; set; } = Guid.NewGuid();
 
         public string Name { get; set; }
 
         public string Value { get; set; }
 
         [ForeignKey("StrategyEntity")]
-        public int IdStrategy { get; set; }
+        public Guid IdStrategy { get; set; }
 
         public virtual StrategyEntity StrategyEntity { get; set; }
     }
