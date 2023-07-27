@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Handlers\Get\" />
+    <Folder Include="Handlers\Delete\" />
+    <Folder Include="Handlers\Update\" />
     <Folder Include="Requests\Update\" />
     <Folder Include="Requests\Delete\" />
     <Folder Include="Requests\Get\" />

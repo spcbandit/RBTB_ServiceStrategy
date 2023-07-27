@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MediatR;
+using RBTB_ServiceStrategy.Application.Responses.Create;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -7,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace RBTB_ServiceStrategy.Application.Requests.Create
 {
-    internal class CreateSettingsRequest
+    public class CreateSettingsRequest : IRequest<CreateSettingsResponse>
     {
         public string Name { get; set; }
 

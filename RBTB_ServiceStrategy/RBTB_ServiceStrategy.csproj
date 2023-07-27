@@ -15,4 +15,8 @@
     <ProjectReference Include="..\RBTB_ServiceStrategy.Database\RBTB_ServiceStrategy.Database.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>

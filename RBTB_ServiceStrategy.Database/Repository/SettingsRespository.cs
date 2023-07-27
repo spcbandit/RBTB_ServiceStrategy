@@ -20,7 +20,6 @@ namespace RBTB_ServiceStrategy.Database.Repository
         {
             _context = context;
             _db = context.Set<SettingsEntity>();
-
         }
         public int Create(SettingsEntity item)
         {
