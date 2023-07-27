@@ -25,7 +25,7 @@ namespace RBTB_ServiceStrategy.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetStrategies()
         {
-            var collectionStrategies = await _mediator.Send(new GetCollectionSettingsRequest());
+            var collectionStrategies = await _mediator.Send(new GetCollectionStrategyRequest());
 
             return Ok(collectionStrategies);
         }

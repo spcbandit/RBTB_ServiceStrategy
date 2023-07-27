@@ -15,13 +15,23 @@ namespace RBTB_ServiceStrategy.Application.Handlers.Create
     public class CreateSettingsHandler : IRequestHandler<CreateSettingsRequest, CreateSettingsResponse>
     {
         private readonly IRepository<SettingsEntity> _repository;
+        private readonly IRepository<StrategyEntity> _strategy;
 
-        public CreateSettingsHandler(IRepository<SettingsEntity> repository) =>
-            _repository = repository;
+        public CreateSettingsHandler(IRepository<SettingsEntity> repository, IRepository<StrategyEntity> strategy) =>
+            (_repository, _strategy) = (repository, strategy);
 
-        async Task<CreateSettingsResponse> IRequestHandler<CreateSettingsRequest, CreateSettingsResponse>.Handle(CreateSettingsRequest request, 
+        async Task<CreateSettingsResponse> IRequestHandler<CreateSettingsRequest, CreateSettingsResponse>.Handle(CreateSettingsRequest request,
             CancellationToken cancellationToken)
         {
+            if (_strategy.FindById(request.IdStrategy) == null)
+            {
+                return new CreateSettingsResponse
+                {
+                    IsSuccess = false,
+                    ErrorMessage = "Стратегии с указанным Id не существует."
+                };
+            }
+
             var newSettings = new SettingsEntity
             {
                 Name = request.Name,
@@ -34,11 +44,10 @@ namespace RBTB_ServiceStrategy.Application.Handlers.Create
             var response = new CreateSettingsResponse
             {
                 IsSuccess = true,
-                IdSettings = newSettings.IdStrategy
+                IdSettings = newSettings.IdStrategy.ToString()
             };
 
             return response;
         }
-
     }
 }

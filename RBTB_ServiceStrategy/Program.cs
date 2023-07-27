@@ -23,6 +23,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseAuthorization();
 
-app.MapControllers();
+app.UseRouting();
+app.UseEndpoints(endpoint => endpoint.MapControllers());
 
 app.Run();

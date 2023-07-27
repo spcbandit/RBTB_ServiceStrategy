@@ -8,6 +8,6 @@ namespace RBTB_ServiceStrategy.Application.Responses.Create
 {
     internal class CreateSettingsResponse : BaseResponse
     {
-        public Guid IdSettings { get; set; }
+        public string IdSettings { get; set; }
     }
 }
